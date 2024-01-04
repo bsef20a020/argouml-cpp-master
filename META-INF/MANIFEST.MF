@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.argouml.module.cpp;singleton:=true
+Bundle-Version: 0.29.3.qualifier
+Bundle-ClassPath: argouml-module-cpp.jar,
+ lib/anarres-cpp-no-dependencies-1.2.3.jar,
+ lib/commons-io-1.0.jar,
+ lib/easymock-1.1.jar,
+ lib/antlr-2.7.7.jar
+Bundle-Localization: plugin
+Export-Package: META-INF,
+ org.argouml.i18n,
+ org.argouml.language.cpp.generator,
+ org.argouml.language.cpp.reveng,
+ org.argouml.language.cpp.ui
+Require-Bundle: org.argouml.app,
+ org.argouml.core.infra,
+ org.argouml.core.model
+Bundle-Vendor: %pluginProvider
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-RegisterBuddy: org.argouml.core.infra, org.argouml.app
